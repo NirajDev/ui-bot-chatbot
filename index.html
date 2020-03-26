@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    COVID-19 Risk Assessment Scanner powered by Apollo 24|7
+  </title>
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+  <!-- modal -->
+
+  <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div id="myProgress">
+                <div id="myBar"></div>
+              </div>
+          <p>Basis on your scan result, here are Apollo24/7 Recommendations:</p>
+
+          <button type="button" class="btn btn-warning"><span style="color:white; font-size: 12px;">DOWNLOAD APOLLO247 APP</span></button>
+          
+          <button type="button" class="btn btn-warning"><span style="color:white; font-size: 12px;">DOWNLOAD APOLLO247 APP</span></button>
+          
+          <button type="button" class="btn btn-warning"><span style="color:white; font-size: 12px;">DOWNLOAD APOLLO247 APP</span></button>
+        
+          <button type="button" class="btn btn-warning"><span style="color:white; font-size: 12px;">DOWNLOAD APOLLO247 APP</span></button>
+        
+          <button type="button" class="btn btn-warning"><span style="color:white; font-size: 12px;">DOWNLOAD APOLLO247 APP</span></button>
+                </div>
+        <div class="modal-footer">          
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="my-botui-app">
+    <main>
+      <div class="my-container">
+        <bot-ui></bot-ui>
+        <button onclick="reset()" class="reset">
+          <i class="fa fa-undo"></i>
+        </button>
+      </div>
+    </main>
+  </div>
+  <div class="loader">
+    <svg class="spinner" width="50px" height="50px" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+      <circle class="circle" fill="none" stroke-width="5" stroke-linecap="round" cx="25" cy="25" r="20"></circle>
+    </svg>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+  <script src="script/bootstrap.min.js"></script>
+  <script src="script/main.js"></script>
+</body>
+
+</html>
